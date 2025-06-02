@@ -68,7 +68,6 @@ const AuthForm = ({ type }: { type: FormType }) => {
 
           const  idToken = await userCredential.user.getIdToken();
 
-          console.log("idToken", idToken);
 
           if (!idToken) { toast.error("Error signing in user"); return; }
 
